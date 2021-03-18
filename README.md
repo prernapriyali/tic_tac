@@ -1,110 +1,58 @@
-## TIC TAC TOE GAME
 
-​
-## About the Project
-​
-This project is to build a Tic Tac Toe game which can be played on the command line.
-Two human players can play against each other and the board is displayed in between turns.
-We built this project following some requirements: 
-​
-- The main.rb file should be responsible for user interaction, and this is the only place where puts/print and get.chomp can be used
-- Comply with [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) rule
-- Set the permission for reading and writing with attr_accessor, attr_reader properly to Classes
-- Include the validation for user's inputs to correspond to unpredictable behavior from players
-​
-​
-## Table of Contents
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Live Demo](#live-demo)
-* [Getting Started](#getting-started)
-* [About Tic Tac Toe](#about-tic-tac-toe)
-* [How to Play](#how-to-play)
-* [Contributing](#contributing)
-* [Authors](#authors)
-* [Acknowlegments](#acknowlegments)
-* [Show your support](#show-your-support)
-* [License](#license)
-​
-## Built With
-* [Ruby](https://www.ruby-lang.org/en/)
+# Tic-Tac-Toe
+
+This repository contains a command prompt implementation of the classic Tic-Tac-Toe game, built with the Ruby language.
+
+Inside the bin/main file, you'll find the Tic Tac Toe Interface class, which handles user interactions; inside lib/logic.rb, you'll find Tic Tac Toe Logic, a class which implements all logic of the game.
+
+
 
 ## Getting Started
-​
-To get a local copy up and running follow these simple example steps.
-​
-1. On the project GitHub page, navigate to the main page of the repository.
-2. Under the repository name, locate and click on a green button named `Code`. 
-3. Copy the project URL as displayed.
-4. If you're running the Windows Operating System, open your command prompt. On Linux, Open your terminal. 
-5. Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be. 
-6. Type git clone, and then paste the URL you copied in Step 3. <br>
-e.g. git clone https://github.com/Murodjon000/Tic_Tac.git
-7. Press Enter. Your local copy will be created. 
-8. Go into the folder you cloned in this step 7 on your terminal
-e.g. cd Tic_Tac
-9. Type `bin/main.rb` to run the code, and then the game starts!
 
-​
-​
-## About Tic Tac Toe
-​
-Tic Tac Toe is a simple game for 2 players, X and O. 
-It is played on a 3x3 grid. 
-Players take turns placing their Mark, X or O, on an open square in the grid. 
-The first player to take 3 grids vertically, horizontallyor diagonally will be the winner.
-If all 9 squares are filled and neither player can take 3 grids, the game will be draw.
-​
-​
-## How to play
-1. To start the game, input any key
-2. Enter the player's names
-3. Take a look at the board 
-4. Input the number from 1 to 9 to get the position where you want to take
-5. Taking turns to play the game with step 3 and 4
-6. If either player take 3 grids vertically, horizontally or diagonally first, the player is the winner
-7. If neither player can take 3 grids until the board is filled with players' symbols, the game is a tie
-8. If you want to play again, enter any key, otherwise, enter 'q' to quit the game
+To play the game you need to clone the repository by doing
 
-## How to Test
-1. Clone the repo to your local folder
-2. cd into the folder
-3. install rspec by gem install rspec
-4. Run rspec .
-5. 13 examples, 0 failures will be output.
+```bash
 
-​
-## Contributing
-​
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](../../issues).
-​
+git clone https://github.com/phalado/Tic-Tac-Toe
 
-* [License]
+```
 
-## Prerequisites
+Then, go to the project directory by typing:
 
-Ruby,Text editor,Github profile and Git.
+```bash
 
-## Authors
+cd Tic-Tac-Toe
 
-👤 **Murodjon000**
+```
 
-- GitHub: [@Murodjon000](https://github.com/Murodjon000)
-- Twitter: [@Murodjon](https://twitter.com/Murodjo91836152)
-- LinkedIn: [murodjon-tursunpulatov](https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/)
+To run the game type:
+
+```bash
+
+bin/main
+
+```
+
+On your command prompt, you'll initialize the game.
 
 
-## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+## Instructions
 
-Feel free to check the issues page.
+- After initializing, you'll be prompted to type two names. Any sequence of characters works. First name corresponds to player 1 and gets first turn -'X'. Player two gets the second name and turn -'O'.
+- After typing two names, the board will be presented and player 1 will be prompted to type a valid move.
+![](https://files.slack.com/files-pri/T47CT8XPG-FQTPU9T28/image.png)
+- If you try an invalid move, you'll be prompted to type it again. Numbers from 1 to 9 are the **only** valid moves.
+![](https://files.slack.com/files-pri/T47CT8XPG-FQGPP9D8T/image.png)
+- The win condition is to line up three of your symbols -'X' for player 1, 'O' for player 2- either vertically, horizontally or diagonally.
+![](https://files.slack.com/files-pri/T47CT8XPG-FQFEF350S/image.png)
+- If no player has won and no available spots remain, the game is a tie:
+![](https://files.slack.com/files-pri/T47CT8XPG-FQWE9TMU6/image.png)
 
-Show your support
+### License
+This software is registered under the No-License License c:
 
-Give a ⭐️ if you like this project!
+### Authors
 
-## 📝 License
-
-This project is a collaboration project. All rights are reserved for Murodjon.
+- Raphael Cordeiro	| [Github](https://github.com/phalado/)
+- Daniel Chincoya	| [@chincoya7](https://twitter.com/chincoya7)
